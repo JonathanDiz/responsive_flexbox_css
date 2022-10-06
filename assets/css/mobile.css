@@ -8,13 +8,21 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  width: 100%;
+  background-position: left;
+}
+
 .contenedor {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: scroll;
-  width: 100%;
-  height: 100vh;
+  min-width: 50%;
 }
 
 .contenedor__mensaje , form {
@@ -25,6 +33,7 @@
 .form {
   width: 100%;
   max-width: 600px;
+  min-width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
